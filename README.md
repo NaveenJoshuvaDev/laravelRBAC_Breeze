@@ -25,3 +25,28 @@ php artisan make:model Role -m
 
 
 ```
+
+-   Above code says when we want to create separate command for migration file.
+
+-   Create Model Permission
+
+```php
+php artisan make:model Permission -m
+```
+
+3. Add columns in permissions and roles migration file ( $table->string('name');
+   $table->string('slug');)
+
+4. Create a new Migration file
+
+```php
+
+php artisan make:migration create_users_permission_table --create=users_permissions
+
+
+```
+
+```
+
+php artisan make:migration create_users_roles_table --create=users_roles
+```
