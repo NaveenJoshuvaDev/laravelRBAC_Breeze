@@ -74,4 +74,10 @@ $table->unsignedBigInteger('user_id');
 Consistency with primary keys: In many databases, primary keys are typically unsigned integers. By making foreign keys unsigned as well, you maintain consistency and avoid potential issues with data type mismatch.
 
 Performance: Some databases can perform faster operations on unsigned integers compared to signed integers.
-![My IMage](screenshot/migrationtable.png)
+
+6. Migrate and lets see how many tables we have created.
+   ![My IMage](screenshot/migrationtable.png)
+
+-   so now we have created six tables but users table is default one see below sketch of tables to get an overview
+
+![Sketch of Tables](screenshot/migration.png)
