@@ -50,3 +50,15 @@ php artisan make:migration create_users_permission_table --create=users_permissi
 
 php artisan make:migration create_users_roles_table --create=users_roles
 ```
+
+-   The --create=users_roles part indicates that you want to create a migration file for creating a table named users_roles. So when you run the migration later using php artisan migrate, it will create a new table in your database with the name users_roles
+
+5.  $table->unsignedBigInteger('user_id');
+
+-   why we use unsignedint
+    Using unsigned is often recommended for foreign keys
+    Memory optimization: Unsigned integers use the entire range of positive values for the data type, effectively doubling the upper limit of the integer type, which can be useful for very large databases.
+
+Consistency with primary keys: In many databases, primary keys are typically unsigned integers. By making foreign keys unsigned as well, you maintain consistency and avoid potential issues with data type mismatch.
+
+Performance: Some databases can perform faster operations on unsigned integers compared to signed integers.
