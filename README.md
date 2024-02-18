@@ -81,3 +81,8 @@ Performance: Some databases can perform faster operations on unsigned integers c
 -   so now we have created six tables but users table is default one see below sketch of tables to get an overview
 
 ![Sketch of Tables](screenshot/migration.png)
+7.Models
+
+-   Now we have three models
+
+![Models](screenshot/models.png)
